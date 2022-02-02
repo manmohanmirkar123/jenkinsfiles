@@ -1,0 +1,21 @@
+pipeline{
+
+    agent any
+
+    stages {
+    stage('Build'){
+        steps {
+         echo "Building"
+         sh '''
+         echo "Doing more stage here"
+         ls -ltr
+
+         '''
+
+        }
+
+    }
+
+
+    }
+}

@@ -1,0 +1,24 @@
+pipeline {
+
+agent any
+environment {
+
+Name = 'Manmohan'
+SURNAME = 'Mirkar'
+
+}
+
+stages {
+
+stage('Build'){
+steps{
+echo "my name is $Name and surname is: $SURNAME"
+
+}
+
+
+}
+
+}
+
+}

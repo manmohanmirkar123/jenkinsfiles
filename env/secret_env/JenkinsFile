@@ -1,0 +1,17 @@
+pipeline {
+ agent any
+ environment {
+ secret = credentials('secret')
+
+ }
+ stages{
+     stage('Build') {
+       steps {
+        echo "$secret"
+
+       }
+
+     }
+ }
+
+}
